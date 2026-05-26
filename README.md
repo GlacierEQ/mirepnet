@@ -2,12 +2,16 @@
 ![issues](https://img.shields.io/github/issues/staraink/MIRepNet)
 ![forks](https://img.shields.io/github/forks/staraink/MIRepNet?style=flat&color=orange)
 ![stars](https://img.shields.io/github/stars/staraink/MIRepNet?style=flat&color=red)
-[![arXiv](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-FFD21E)](https://huggingface.co/starself/MIRepNet)
-[![huggingface](https://img.shields.io/badge/arXiv-2507.20254-b31b1b.svg)](https://arxiv.org/abs/2507.20254)
+[![huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-FFD21E)](https://huggingface.co/starself/MIRepNet)
+[![arXiv](https://img.shields.io/badge/arXiv-2507.20254-b31b1b.svg)](https://arxiv.org/abs/2507.20254)
 ![license](https://img.shields.io/github/license/staraink/MIRepNet)
 
 ## :speech_balloon: Annoucement
-- [2025.07.29] 🚩 **News**  The manuscript of MIRepNet can be found in [MIRepNet: A Pipeline and Foundation Model for EEG-Based Motor Imagery Classification](https://arxiv.org/abs/2507.20254).
+- [2026.04.20] 🚩 **News:**  The accepted version of this paper at KBS can be accessed via [MIRepNet: A Pipeline and Pre-trained Model for EEG-Based Motor Imagery Classification](https://www.sciencedirect.com/science/article/abs/pii/S0950705126006921?dgcid=coauthor).
+
+- [2026.04.07] 🚩 **News:**  This paper is accepted by **Knowledge-based Systems** (**KBS**, IF=7.6)🎉🎉🎉.
+
+- [2025.07.29] 🚩 **News**  The manuscript of MIRepNet can be found in [MIRepNet: A Pipeline and Foundation Model for EEG-Based Motor Imagery Classification](https://dingkun0817.github.io/MIRepNet/).
 
 - [2025.07.26] We propose **MIRepNet**, the first EEG foundation model tailored explicitly for motor imagery (MI), achieving **SOTA** performance across five public datasets and significantly outperforming existing specialized and generalized EEG models, even with fewer than 30 training trials per class.
 
@@ -91,6 +95,26 @@ In this paper, I have implemented nine EEG specialist models and five generalize
 * [CBraMod](https://openreview.net/forum?id=NPNUHgHF2w): CBraMod: A Criss-Cross Brain Foundation Model for EEG Decoding (ICLR 2025)
 * [EEGPT](https://proceedings.neurips.cc/paper_files/paper/2024/hash/4540d267eeec4e5dbd9dae9448f0b739-Abstract-Conference.html): EEGPT: Pretrained Transformer for Universal and Reliable Representation of EEG Signals (NIPS 2024)
 
+### Model Sizes
+
+|     Model Category     |       Model       |  Parameters  |
+|:----------------------:|:-----------------:|:------------:|
+| **EEG Specialist Models**  | ShallowConv       |   31.6 K     |
+|                        | DeepConv          |   27.7 K     |
+|                        | EEGNet            |    1.9 K     |
+|                        | IFNet             |    9.9 K     |
+|                        | ADFCNN            |    3.9 K     |
+|                        | Conformer         |  146.8 K     |
+|                        | FBCNet            |    1.5 K     |
+|                        | EDPNet            |   30.6 K     |
+| **EEG Generalized Models** | BIOT              |    3.2 M     |
+|                        | BENDR             |    4.0 M     |
+|                        | LaBraM            |    5.8 M     |
+|                        | CBraMod           |    4.0 M     |
+|                        | EEGPT             |   25.0 M     |
+| **MI Foundation Model**| MIRepNet (Ours)   |    5.2 M     |
+
+
 
 ## 📩 Contact
 For any questions or collaborations, please feel free to reach out via `liudingkun@hust.edu.cn` / `zhu_chen@hust.edu.cn` or open an issue in this repository.
@@ -98,11 +122,14 @@ For any questions or collaborations, please feel free to reach out via `liudingk
 ## Citation
 If you find our repo or MIRepNet useful for your research, please cite us:
 ```
-@misc{liu2025MIRepNet,
-  title         = {MIRepNet: A Pipeline and Foundation Model for EEG-Based Motor Imagery Classification}, 
-  author        = {Dingkun Liu and Zhu Chen and Jingwei Luo and Shijie Lian and Dongrui Wu},
-  year          = {2025},
-  eprint        = {2507.20254},
-  archivePrefix = {arXiv},
+@article{liu2026mirepnet,
+  title={{MIR}ep{N}et: A Pipeline and Pre-trained Model for {EEG}-Based Motor Imagery Classification},
+  author={Dingkun Liu and Zhu Chen and Jingwei Luo and Shijie Lian and Yuheng Chen and Shaojie Hou and Xiaolian Zhu and Dongrui Wu},
+  journal={Knowledge-Based Systems},
+  volume = {343},
+  pages = {115966},
+  year={2026},
+  publisher={Elsevier},
+  doi = {https://doi.org/10.1016/j.knosys.2026.115966}
 }
 ```
